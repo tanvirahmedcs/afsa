@@ -1,0 +1,213 @@
+╔═══════════════════════════════════════════════════════════════╗
+║          AFSA - COMPREHENSIVE HELP GUIDE                     ║
+║          Advanced Forensic Security Analyzer v2.0.0          ║
+║          Created by Tanvir Ahmed CS                          ║
+╚═══════════════════════════════════════════════════════════════╝
+
+🚀 QUICK START
+
+Type any of these commands to get help:
+
+  afsa -h              # Show complete help with all details
+  afsa --help          # Same as above
+  afsa help            # Show help information
+  afsa [command] -h    # Get help for a specific command
+
+═══════════════════════════════════════════════════════════════
+
+📋 MAIN HELP SECTIONS
+
+When you run `afsa -h` or `afsa --help`, you'll see:
+
+  ✅ DESCRIPTION       - What AFSA does and why
+  ✅ FEATURES          - All 7 security modules with descriptions
+  ✅ USAGE             - How to use the tool
+  ✅ COMMANDS          - List of all available commands
+  ✅ EXAMPLES          - Real-world usage examples for each module
+  ✅ FLAGS             - Command-line flags and options
+  ✅ GLOBAL FLAGS      - System-wide settings
+  ✅ SECURITY NOTES    - Important security disclaimers
+  ✅ AUTHOR            - Creator and license information
+
+═══════════════════════════════════════════════════════════════
+
+🔴 AVAILABLE COMMANDS & HELP
+
+DNS Reconnaissance:
+  afsa dns --help
+  afsa dns example.com
+  afsa dns google.com -v
+
+IP Intelligence:
+  afsa ip --help
+  afsa ip 8.8.8.8
+  afsa ip 1.1.1.1 --verbose
+
+Firewall Analysis:
+  afsa firewall --help
+  afsa firewall status
+  afsa firewall test example.com
+  afsa firewall test example.com -p 22,80,443
+
+WAF Detection:
+  afsa waf --help
+  afsa waf github.com
+  afsa waf cloudflare.com --test-xss
+
+WHOIS Lookup:
+  afsa whois --help
+  afsa whois example.com
+  afsa whois 8.8.8.8
+
+Port Scanning:
+  afsa scan --help
+  afsa scan example.com
+  afsa scan example.com -r 1-1000
+  afsa scan example.com --deep
+
+Geolocation:
+  afsa geo --help
+  afsa geo 8.8.8.8
+
+═══════════════════════════════════════════════════════════════
+
+�� COMMON FLAGS
+
+-h, --help              Show help message
+-v, --verbose           Enable verbose output
+-d, --detailed          Show detailed information
+-p, --ports             Specify ports (comma-separated)
+-r, --range             Specify port range (1-1000)
+-t, --timeout           Set timeout in seconds
+
+═══════════════════════════════════════════════════════════════
+
+📖 HELP EXAMPLES
+
+# Get main help
+afsa -h
+afsa --help
+
+# Get help for DNS command
+afsa dns -h
+afsa dns --help
+
+# Get help for Firewall command
+afsa firewall -h
+
+# Get help for WAF command
+afsa waf --help
+
+# Get help for Port Scan command
+afsa scan -h
+
+# Get help for Geolocation command
+afsa geo --help
+
+═══════════════════════════════════════════════════════════════
+
+🎯 USAGE PATTERNS
+
+# Simple lookup
+afsa dns example.com
+
+# Verbose output
+afsa dns example.com -v
+afsa ip 8.8.8.8 --verbose
+
+# Multiple commands
+afsa firewall test example.com -p 22,80,443
+afsa scan example.com -r 1-1000
+
+# Get info for IP
+afsa ip 8.8.8.8
+afsa whois 8.8.8.8
+afsa geo 8.8.8.8
+
+# Get info for domain
+afsa dns example.com
+afsa whois example.com
+afsa firewall test example.com
+
+═══════════════════════════════════════════════════════════════
+
+✨ KEY FEATURES OF HELP SYSTEM
+
+✅ Complete documentation for every command
+✅ Real-world usage examples
+✅ Flag descriptions and defaults
+✅ Security notes and best practices
+✅ Professional red-themed banner
+✅ Color-coded output for easy reading
+✅ Comprehensive and beginner-friendly
+
+═══════════════════════════════════════════════════════════════
+
+🔒 SECURITY REMINDERS
+
+Before using AFSA, remember:
+  • Always get proper authorization
+  • Follow responsible disclosure
+  • Comply with all applicable laws
+  • Use only for legitimate testing
+  • Check LICENSE for full terms
+
+═══════════════════════════════════════════════════════════════
+
+📝 EXAMPLES SUMMARY
+
+DNS Lookup:
+  afsa dns google.com         # See all DNS records
+  afsa dns google.com -v      # Verbose DNS output
+
+IP Analysis:
+  afsa ip 8.8.8.8             # Analyze IP
+  afsa ip 1.1.1.1 --verbose   # Detailed IP info
+
+Firewall Testing:
+  afsa firewall status        # Check firewall
+  afsa firewall test example.com          # Test connectivity
+  afsa firewall test example.com -p 22,80,443  # Test specific ports
+
+WAF Detection:
+  afsa waf github.com         # Detect WAF
+  afsa waf cloudflare.com --test-xss      # WAF with XSS test
+
+WHOIS Lookup:
+  afsa whois example.com      # Domain WHOIS
+  afsa whois 8.8.8.8          # IP WHOIS
+
+Port Scanning:
+  afsa scan example.com       # Common ports
+  afsa scan example.com -r 1-1000     # Port range
+  afsa scan example.com --deep        # All ports
+
+Geolocation:
+  afsa geo 8.8.8.8            # Get geo info
+
+═══════════════════════════════════════════════════════════════
+
+🎓 GETTING STARTED
+
+1. Display main help:
+   afsa -h
+
+2. View feature list:
+   Look for the FEATURES section in help
+
+3. Choose a command:
+   Pick from dns, ip, firewall, waf, whois, scan, or geo
+
+4. Get command help:
+   afsa [command] -h
+
+5. Run the command:
+   afsa [command] [arguments]
+
+═══════════════════════════════════════════════════════════════
+
+Created by Tanvir Ahmed CS
+Version 2.0.0 | MIT License
+GitHub: github.com/tanvircs/afsa
+
+═══════════════════════════════════════════════════════════════
