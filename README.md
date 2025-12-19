@@ -44,7 +44,7 @@ AFSA is a comprehensive security analysis platform combining multiple reconnaiss
 ### Method 1: Direct Installation from GitHub (Recommended)
 
 ```bash
-go install github.com/tanvircs/afsa@latest
+go install https://github.com/tanvirahmedcs/afsa@latest
 ```
 
 Then use it globally:
